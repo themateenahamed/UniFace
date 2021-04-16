@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.main-container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden
+}
+
+.screen-anim {
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    background-color: #00adfe;
+    height: 100vh;
+    width: 100%;
+    z-index: 1
+}
+
+.circle1 {
+    position: absolute;
+    left: -70vh;
+    top: -57vh;
+    background: #fff;
+    opacity: 15%;
+    border-radius: 50%;
+    height: 120vh;
+    width: 120vh
+}
+
+.circle2 {
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    top: -60vh;
+    left: -50vh;
+    background: #fff;
+    opacity: 15%;
+    border-radius: 50%
+}
+
+.circle3 {
+    position: absolute;
+    height: 80vh;
+    width: 80vh;
+    top: -60vh;
+    left: -30vh;
+    background: #fff;
+    opacity: 20%;
+    border-radius: 50%
+}
+
+.logo {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 140px;
+    z-index: 3
+}
+
+#img {
+    position: relative;
+    height: 150%;
+    top: -50px;
+    right: 10px
+}
+
+.shadow {
+    position: absolute;
+    background: #00182d;
+    height: 300px;
+    width: 290px;
+    margin: auto;
+    top: -200px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 45px;
+    filter: blur(50px);
+    z-index: -1
+}
+
+.bottom-section {
+    position: relative;
+    width: auto;
+    height: 45vh;
+    align-items: center;
+    bottom: 0
+}
+
+.emotion {
+    text-align: center;
+    position: absolute;
+    height: 25vh;
+    bottom: 17px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0
+}
+
+.emotion-icon {
+    color: #00adfe;
+    font-size: 75px
+}
+
+.emotion-text {
+    font-size: 50px
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    color: #333
+}
+
+.small-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 21px
+}
+
+.icon-main {
+    position: fixed;
+    height: 80px;
+    background: #00adfe;
+    width: 80px;
+    margin-left: -80px;
+    margin-top: 62vh;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    opacity: 0;
+    transition: 1s
+}
+
+@keyframes fade {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.bring-in {
+    animation: bring 1s ease-in-out;
+    opacity: 1
+}
+
+@keyframes bring {
+    0% {
+        margin-left: 0
+    }
+
+    100% {
+        margin-left: -80px
+    }
+}
+
+.icon-main>img {
+    width: 55px;
+    position: absolute;
+    margin: auto;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+    top: 0
+}
+
+.tut-container-center {
+    position: absolute;
+    height: 40vh;
+    width: auto;
+    margin: auto;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.icon {
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px
+}
+
+.off_on {
+    width: 70px
+}
+
+.tutorial {
+    transition: .75s ease-in-out;
+    text-align: center;
+    position: absolute;
+    background-color: #00adfe;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 100%;
+    bottom: 0;
+    z-index: 5;
+    justify-content: center;
+    overflow: hidden
+}
+
+.tut-t {
+    color: #fff
+}
+
+.tut-active {
+    transition: .75s ease-in-out;
+    left: 0
+}
+
+#tt {
+    color: #fff
+}
+
+.icon_container {
+    height: 16vh;
+    width: 16vh;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px 0;
+    background-color: red;
+    box-shadow: 0 2px 15px rgba(255, 0, 0, .7)
+}
+
+.of_tut {
+    background-color: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 1, .2)
+}
+
+.of_switch {
+    background-color: #39f200;
+    box-shadow: 0 2px 15px rgba(57, 242, 0, .7)
+}
+
+.switch-feature {
+    transition: .75s ease-in-out;
+    position: absolute;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: -100%;
+    bottom: 0;
+    z-index: 5;
+    text-align: center;
+    color: #333
+}
+
+.switch-container-center {
+    position: absolute;
+    height: 40vh;
+    width: auto;
+    margin: auto;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.text {
+    font-size: 45px;
+    position: relative;
+    white-space: nowrap
+}
+
+.start {
+    color: white;
+    position: relative;
+    margin: auto;
+    top: 30%;
+    font-size: 15px;
+}
+
+.switch-active {
+    transition: .75s ease-in-out;
+    left: 0
+}

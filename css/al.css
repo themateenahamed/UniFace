@@ -1,0 +1,54 @@
+canvas {
+    position: absolute;
+}
+
+#video-screen {
+    transform: scale(-1, 1);
+    position: fixed;
+    background: #282828;
+    margin: auto;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:120vh;
+    width:80vh;
+}
+
+.vid-container {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.vid-container {
+    background: #282828;
+    height: 55vh;
+    width: auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.video_face {
+    width: 100%;
+    padding-top: 50%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.video_face--back {
+    background: #282828;
+}
+
+.video_face--front {
+    background: #282828;
+    transform: rotateY(180deg);
+}
